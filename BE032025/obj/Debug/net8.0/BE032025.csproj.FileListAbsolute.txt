@@ -12,3 +12,4 @@ G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\refint\BE032025.dll
 G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.pdb
 G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.genruntimeconfig.cache
 G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\ref\BE032025.dll
+G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.sourcelink.json
