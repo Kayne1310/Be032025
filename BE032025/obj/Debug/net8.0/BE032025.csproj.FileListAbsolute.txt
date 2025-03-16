@@ -13,3 +13,9 @@ G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.pdb
 G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.genruntimeconfig.cache
 G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\ref\BE032025.dll
 G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.sourcelink.json
+G:\Hoc Web API\BE032025\BE032025\bin\Debug\net8.0\Common.dll
+G:\Hoc Web API\BE032025\BE032025\bin\Debug\net8.0\DataAcess.dll
+G:\Hoc Web API\BE032025\BE032025\bin\Debug\net8.0\Common.pdb
+G:\Hoc Web API\BE032025\BE032025\bin\Debug\net8.0\DataAcess.pdb
+G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.csproj.AssemblyReference.cache
+G:\Hoc Web API\BE032025\BE032025\obj\Debug\net8.0\BE032025.csproj.Up2Date

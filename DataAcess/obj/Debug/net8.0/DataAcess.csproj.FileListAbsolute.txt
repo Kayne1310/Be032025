@@ -1,0 +1,12 @@
+G:\Hoc Web API\BE032025\DataAcess\bin\Debug\net8.0\DataAcess.deps.json
+G:\Hoc Web API\BE032025\DataAcess\bin\Debug\net8.0\DataAcess.dll
+G:\Hoc Web API\BE032025\DataAcess\bin\Debug\net8.0\DataAcess.pdb
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.GeneratedMSBuildEditorConfig.editorconfig
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.AssemblyInfoInputs.cache
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.AssemblyInfo.cs
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.CoreCompileInputs.cache
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.sourcelink.json
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.dll
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\refint\DataAcess.dll
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.pdb
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\ref\DataAcess.dll

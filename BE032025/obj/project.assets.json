@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
+      "DataAcess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DataAcess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAcess.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
+    "DataAcess/1.0.0": {
+      "type": "project",
+      "path": "../DataAcess/DataAcess.csproj",
+      "msbuildProject": "../DataAcess/DataAcess.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Common >= 1.0.0",
+      "DataAcess >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\PC\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj": {
+              "projectPath": "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj"
+            },
+            "G:\\Hoc Web API\\BE032025\\DataAcess\\DataAcess.csproj": {
+              "projectPath": "G:\\Hoc Web API\\BE032025\\DataAcess\\DataAcess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
