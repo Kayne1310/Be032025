@@ -10,3 +10,7 @@ G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.dll
 G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\refint\DataAcess.dll
 G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.pdb
 G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\ref\DataAcess.dll
+G:\Hoc Web API\BE032025\DataAcess\bin\Debug\net8.0\Common.dll
+G:\Hoc Web API\BE032025\DataAcess\bin\Debug\net8.0\Common.pdb
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.AssemblyReference.cache
+G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.Up2Date

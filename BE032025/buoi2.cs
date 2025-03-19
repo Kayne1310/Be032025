@@ -120,6 +120,7 @@ namespace BE032025
              */
 
             //buoi 3 bai 2
+            /*
             Bai4 bai4 = new Bai4();
             while (true)
             {
@@ -146,11 +147,76 @@ namespace BE032025
                         break;
                     case 3:
                           return;
-
-
                     default: return;
                 }
-            }
+            }           
+             */
+
+            //buoi 4
+            Buoi4 employeeManager = new Buoi4();
+            int choice;
+
+            do
+            {
+                Console.WriteLine("\n========================================");
+                Console.WriteLine(" QUAN LY NHAN VIEN ");
+                Console.WriteLine("========================================");
+                Console.WriteLine("1. Nhap danh sach Nhan vien tu ban phim");
+                Console.WriteLine("2. Nhap danh sach nhan vien tu file Excel");
+                Console.WriteLine("3. Hien thi danh sach nhan vien");
+                Console.WriteLine("4. Tim nhan vien co tham nien 5 hoac 10 nam");
+                Console.WriteLine("0. Thoat chuong trinh");
+                Console.Write("Vui long chon: ");
+
+                bool isValidInput = int.TryParse(Console.ReadLine(), out choice);
+
+                if (!isValidInput)
+                {
+                    Console.WriteLine("Lua chon khong hop le, vui long nhap so.");
+                    continue;
+                }
+
+                switch (choice)
+                {
+                    case 1:
+                      Buoi4.NhapNhanVienTuBanPhim(employeeManager);
+                        break;
+
+                    case 2:
+                        Console.Write("Nhap duong dan file Excel: ");
+                        string filePath = Console.ReadLine();
+
+                       
+                            string errorMessages = employeeManager.Employeer_Insert_FromExcelFile(filePath);
+                            if (!string.IsNullOrEmpty(errorMessages))
+                            {
+                                Console.WriteLine("Co loi trong qua trinh nhap du lieu:");
+                                Console.WriteLine(errorMessages);
+                            }
+                            break;
+
+             
+
+                    case 3:
+                        employeeManager.DisplayAllEmployees();
+                        break;
+
+                    case 4:
+                        employeeManager.FindEmployeesBySeniority();
+                        break;
+
+                    case 0:
+                        Console.WriteLine("Thoat chuong trinh...");
+                        break;
+
+                    default:
+                        Console.WriteLine("Lua chon khong hop le, vui long thu lai.");
+                        break;
+                }
+
+            } while (choice != 0);
+
+
         }
     }
 }
