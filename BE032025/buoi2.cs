@@ -1,5 +1,8 @@
 ﻿using Common;
 using DataAcess;
+using DataAcess.Abstract;
+using DataAcess.Class;
+using DataAcess.Struct;
 using System;
 
 namespace BE032025
@@ -153,70 +156,183 @@ namespace BE032025
              */
 
             //buoi 4
-            Buoi4 employeeManager = new Buoi4();
-            int choice;
+            //Buoi4 employeeManager = new Buoi4();
+            //int choice;
 
+            //do
+            //{
+            //    Console.WriteLine("\n========================================");
+            //    Console.WriteLine(" QUAN LY NHAN VIEN ");
+            //    Console.WriteLine("========================================");
+            //    Console.WriteLine("1. Nhap danh sach Nhan vien tu ban phim");
+            //    Console.WriteLine("2. Nhap danh sach nhan vien tu file Excel");
+            //    Console.WriteLine("3. Hien thi danh sach nhan vien");
+            //    Console.WriteLine("4. Tim nhan vien co tham nien 5 hoac 10 nam");
+            //    Console.WriteLine("0. Thoat chuong trinh");
+            //    Console.Write("Vui long chon: ");
+
+            //    bool isValidInput = int.TryParse(Console.ReadLine(), out choice);
+
+            //    if (!isValidInput)
+            //    {
+            //        Console.WriteLine("Lua chon khong hop le, vui long nhap so.");
+            //        continue;
+            //    }
+
+            //    switch (choice)
+            //    {
+            //        case 1:
+            //          Buoi4.NhapNhanVienTuBanPhim(employeeManager);
+            //            break;
+
+            //        case 2:
+            //            Console.Write("Nhap duong dan file Excel: ");
+            //            string filePath = Console.ReadLine();
+
+
+            //                string errorMessages = employeeManager.Employeer_Insert_FromExcelFile(filePath);
+            //                if (!string.IsNullOrEmpty(errorMessages))
+            //                {
+            //                    Console.WriteLine("Co loi trong qua trinh nhap du lieu:");
+            //                    Console.WriteLine(errorMessages);
+            //                }
+            //                break;
+
+
+
+            //        case 3:
+            //            employeeManager.DisplayAllEmployees();
+            //            break;
+
+            //        case 4:
+            //            employeeManager.FindEmployeesBySeniority();
+            //            break;
+
+            //        case 0:
+            //            Console.WriteLine("Thoat chuong trinh...");
+            //            break;
+
+            //        default:
+            //            Console.WriteLine("Lua chon khong hop le, vui long thu lai.");
+            //            break;
+            //    }
+
+            //} while (choice != 0);
+
+
+            //BUOI 9
+            //bai 1
+            /*
+            Shape rectangle = new Rectangle(10, 20);
+            Console.WriteLine(rectangle.area());
+            rectangle.display();
+
+            Shape tamgiac = new Triangle(20, 30);
+            Console.WriteLine(tamgiac.area());
+            tamgiac.display();
+
+
+            int choice;
             do
             {
-                Console.WriteLine("\n========================================");
-                Console.WriteLine(" QUAN LY NHAN VIEN ");
-                Console.WriteLine("========================================");
-                Console.WriteLine("1. Nhap danh sach Nhan vien tu ban phim");
-                Console.WriteLine("2. Nhap danh sach nhan vien tu file Excel");
-                Console.WriteLine("3. Hien thi danh sach nhan vien");
-                Console.WriteLine("4. Tim nhan vien co tham nien 5 hoac 10 nam");
-                Console.WriteLine("0. Thoat chuong trinh");
-                Console.Write("Vui long chon: ");
+                Console.Clear();
+                Console.WriteLine("===== MENU =====");
+                Console.WriteLine("1. NHap hinh chu nhat ");
+                Console.WriteLine("2.nhap hinh tam giac ");
+                Console.WriteLine("3. Exit");
+                Console.Write("Chon 1-3: ");
 
-                bool isValidInput = int.TryParse(Console.ReadLine(), out choice);
-
-                if (!isValidInput)
+                if (!int.TryParse(Console.ReadLine(), out choice))
                 {
-                    Console.WriteLine("Lua chon khong hop le, vui long nhap so.");
+                    Console.WriteLine("Vui long nhap hop le");
+                    Console.ReadKey();
                     continue;
                 }
+
+                Shape shape = null;
 
                 switch (choice)
                 {
                     case 1:
-                      Buoi4.NhapNhanVienTuBanPhim(employeeManager);
+                        shape = NhapRectangle();
                         break;
-
                     case 2:
-                        Console.Write("Nhap duong dan file Excel: ");
-                        string filePath = Console.ReadLine();
-
-                       
-                            string errorMessages = employeeManager.Employeer_Insert_FromExcelFile(filePath);
-                            if (!string.IsNullOrEmpty(errorMessages))
-                            {
-                                Console.WriteLine("Co loi trong qua trinh nhap du lieu:");
-                                Console.WriteLine(errorMessages);
-                            }
-                            break;
-
-             
-
+                        shape = NhapTriangle();
+                        break;
                     case 3:
-                        employeeManager.DisplayAllEmployees();
+                        Console.WriteLine("Exit");
                         break;
-
-                    case 4:
-                        employeeManager.FindEmployeesBySeniority();
-                        break;
-
-                    case 0:
-                        Console.WriteLine("Thoat chuong trinh...");
-                        break;
-
                     default:
-                        Console.WriteLine("Lua chon khong hop le, vui long thu lai.");
+                        Console.WriteLine("Lua chon koo hoop le");
                         break;
                 }
 
-            } while (choice != 0);
+                if (shape != null)
+                {
+                   
+                    Console.WriteLine("Dien Tich " + shape.area());
+                    shape.display();
+                }
+
+                if (choice != 3)
+                {
+                    Console.WriteLine("\n   ");
+                    Console.ReadKey();
+                }
+
+            } while (choice != 3);
+            */
+
+            //BAI 2
+            EmployeeClass emp1 = new Manager("nguyen khanh", 10000000,10 );
+            EmployeeClass emp2 = new Worker("tran khanh", 160, "ha nôi");
+
+            Console.WriteLine("== thong tin manager==");
+            emp1.display();
+
+            Console.WriteLine("\n== tt worker ==");
+            emp2.display();
 
 
+        }
+
+
+        public static Shape NhapRectangle()
+        {
+            Console.Write("NHap chieu dai hinh chu nhat : ");
+            string height = Console.ReadLine();
+
+            //check valid
+
+            Console.Write("NHap chieu rong hinh chu nhat: ");
+            string width = Console.ReadLine();
+            var checkh = Common.ValidateDataInput.CheckValidInputNumberDouble(height);
+            var checkw = Common.ValidateDataInput.CheckValidInputNumberDouble(width);
+            if (checkh == true && checkw == true)
+            {
+
+                return new Rectangle(Double.Parse(width), Double.Parse(height));
+            }
+            return null;
+        }
+
+        public static Shape NhapTriangle()
+        {
+            Console.Write("NHap chieu dai tam giac: ");
+            string height = Console.ReadLine();
+
+            //check valid
+
+            Console.Write("NHap chieu rong: ");
+            string width = Console.ReadLine();
+            var checkh = Common.ValidateDataInput.CheckValidInputNumberDouble(height);
+            var checkw = Common.ValidateDataInput.CheckValidInputNumberDouble(width);
+            if (checkh == true && checkw == true)
+            {
+
+                return new Triangle(Double.Parse(width), Double.Parse(height));
+            }
+            return null;
         }
     }
 }

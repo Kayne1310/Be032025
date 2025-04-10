@@ -10,3 +10,15 @@ G:\Hoc Web API\BE032025\Common\obj\Debug\net8.0\Common.dll
 G:\Hoc Web API\BE032025\Common\obj\Debug\net8.0\refint\Common.dll
 G:\Hoc Web API\BE032025\Common\obj\Debug\net8.0\Common.pdb
 G:\Hoc Web API\BE032025\Common\obj\Debug\net8.0\ref\Common.dll
+C:\Users\Vanto\Source\Repos\Be032025\Common\bin\Debug\net8.0\Common.deps.json
+C:\Users\Vanto\Source\Repos\Be032025\Common\bin\Debug\net8.0\Common.dll
+C:\Users\Vanto\Source\Repos\Be032025\Common\bin\Debug\net8.0\Common.pdb
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\Common.sourcelink.json
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\Common.dll
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\refint\Common.dll
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\Common.pdb
+C:\Users\Vanto\Source\Repos\Be032025\Common\obj\Debug\net8.0\ref\Common.dll

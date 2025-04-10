@@ -35,6 +35,31 @@ namespace Common
 
         }
 
+        public static bool CheckValidInputNumberDouble(string inputNumber)
+        {
+            if (string.IsNullOrEmpty(inputNumber))
+            {
+                return false;
+            }
+
+            inputNumber = inputNumber.Trim();
+
+            if (!double.TryParse(inputNumber, out double num))
+            {
+                return false;
+            }
+
+            double numberInput = double.Parse(inputNumber); // Nhập số nguyên từ bàn phím
+
+            if (numberInput > double.MaxValue)
+            {
+                return false;
+            }
+            return true;
+
+
+        }
+
         public static bool CheckValidateString(string inputString)
         {
             if (string.IsNullOrEmpty(inputString))
@@ -96,6 +121,9 @@ namespace Common
                 return false;
             }
         }
+
+
+
     }
 
 }

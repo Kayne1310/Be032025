@@ -14,3 +14,19 @@ G:\Hoc Web API\BE032025\DataAcess\bin\Debug\net8.0\Common.dll
 G:\Hoc Web API\BE032025\DataAcess\bin\Debug\net8.0\Common.pdb
 G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.AssemblyReference.cache
 G:\Hoc Web API\BE032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.Up2Date
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\bin\Debug\net8.0\DataAcess.deps.json
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\bin\Debug\net8.0\DataAcess.dll
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\bin\Debug\net8.0\DataAcess.pdb
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\bin\Debug\net8.0\Common.dll
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\bin\Debug\net8.0\Common.pdb
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.AssemblyReference.cache
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.AssemblyInfoInputs.cache
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.AssemblyInfo.cs
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.CoreCompileInputs.cache
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.sourcelink.json
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.csproj.Up2Date
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.dll
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\refint\DataAcess.dll
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\DataAcess.pdb
+C:\Users\Vanto\Source\Repos\Be032025\DataAcess\obj\Debug\net8.0\ref\DataAcess.dll

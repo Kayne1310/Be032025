@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Hoc Web API\\BE032025\\BE032025\\BE032025.csproj": {}
+    "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\BE032025\\BE032025.csproj": {}
   },
   "projects": {
-    "G:\\Hoc Web API\\BE032025\\BE032025\\BE032025.csproj": {
+    "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\BE032025\\BE032025.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Hoc Web API\\BE032025\\BE032025\\BE032025.csproj",
+        "projectUniqueName": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\BE032025\\BE032025.csproj",
         "projectName": "BE032025",
-        "projectPath": "G:\\Hoc Web API\\BE032025\\BE032025\\BE032025.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "G:\\Hoc Web API\\BE032025\\BE032025\\obj\\",
+        "projectPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\BE032025\\BE032025.csproj",
+        "packagesPath": "C:\\Users\\Vanto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\BE032025\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj": {
-                "projectPath": "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj"
+              "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\Common.csproj"
               },
-              "G:\\Hoc Web API\\BE032025\\DataAcess\\DataAcess.csproj": {
-                "projectPath": "G:\\Hoc Web API\\BE032025\\DataAcess\\DataAcess.csproj"
+              "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\DataAcess\\DataAcess.csproj": {
+                "projectPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\DataAcess\\DataAcess.csproj"
               }
             }
           }
@@ -46,7 +51,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -67,21 +73,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj": {
+    "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "G:\\Hoc Web API\\BE032025\\Common\\obj\\",
+        "projectPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Vanto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,6 +99,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,7 +117,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -127,21 +139,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Hoc Web API\\BE032025\\DataAcess\\DataAcess.csproj": {
+    "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\DataAcess\\DataAcess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Hoc Web API\\BE032025\\DataAcess\\DataAcess.csproj",
+        "projectUniqueName": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\DataAcess\\DataAcess.csproj",
         "projectName": "DataAcess",
-        "projectPath": "G:\\Hoc Web API\\BE032025\\DataAcess\\DataAcess.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "G:\\Hoc Web API\\BE032025\\DataAcess\\obj\\",
+        "projectPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\DataAcess\\DataAcess.csproj",
+        "packagesPath": "C:\\Users\\Vanto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\DataAcess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -149,14 +165,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj": {
-                "projectPath": "G:\\Hoc Web API\\BE032025\\Common\\Common.csproj"
+              "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Vanto\\Source\\Repos\\Be032025\\Common\\Common.csproj"
               }
             }
           }
@@ -170,7 +187,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -197,7 +215,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
