@@ -1,133 +1,154 @@
-﻿//namespace BE032025
-//{
-//    internal class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            //goi ham tinh tong
-//            //Sum(7, 10);
-//            ////goi ham  tich
-//            //Tich(7, 8);
-//            ////goi ham hieu
-//            //Hieu(5, 10);
+﻿using DataAcess.Class;
+using OfficeOpenXml.Style;
+using OfficeOpenXml;
+using System.Drawing;
 
-//            ////goi ham ptb1 2x+6=9
-//            //ptb1(2, 6);
-//            ////goi ham ptb2  2x^2 +3x+1=0
-//            //ptb2(2, 3, 1);
+namespace BE032025
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
 
-//            ////goi ham chuyen doi do C sang F,K
-//            //chuyenDoiDoCSangKVaF(30);
+             List<NhanVien> danhSachNV = new List<NhanVien>();
 
-//            //nhap thang
-//            Console.WriteLine("Moi ban nhap thang");
-//            int month=int.Parse(Console.ReadLine());
-   
-//            if (month <=0 ||month >12 )
-//            {
-//                Console.WriteLine("Error");
-//                return;
-//            }
-//            checkThang(month);
-//        }
+            int choice;
+            do
+            {
+                Console.WriteLine("\n===== QLNV =====");
+                Console.WriteLine("1. ADD NV");
+                Console.WriteLine("2.Tao san luong cong doan");
+                Console.WriteLine("3.Xuat Bao cao");
+                Console.WriteLine("4.Xuat Bao cao Excel");
+                Console.WriteLine("0. Thoat");
+                Console.Write("Chon Chuc nang: ");
+                choice = int.Parse(Console.ReadLine());
 
-//        //Cong
-//        public static void Sum(int numberA, int numberB)
-//        {
-//            Console.WriteLine("Tong la {0}", (numberB + numberA));
-//        }
+                switch (choice)
+                {
+                    case 1:
+                        NhanVien nv = new NhanVien();
+                        nv.NhapThongTin();
+                        danhSachNV.Add(nv);
+                        break;
+                    case 2:
+                        TaoSanLuong();
+                        break;
+                    case 3:
+                        foreach (var n in danhSachNV)
+                        {
+                            n.HienThiBaoCao();
+                        }
+                        break;
+                    case 4:
+                        XuatExcel(danhSachNV);
+                        break;
+                    case 0:
+                        Console.WriteLine("Exit");
+                        break;
+                    default:
+                        Console.WriteLine("Lua chon ko hop le.");
+                        break;
+                }
+            } while (choice != 0);
 
-//        // Tich
-//        public static void Tich(int numberA, int numberB)
-//        {
-//            Console.WriteLine("Tich la {0}", (numberA * numberB));
-//        }
-
-//        //Hieu
-//        public static void Hieu(int numberA, int numberB)
-//        {
-//            Console.WriteLine("Hieu la {0}", (numberA - numberB));
-//        }
-
-//        //pt bac 1 ax+b=0
-//        public static void ptb1(int a, int b)
-//        {
-//            if (a == 0) Console.WriteLine("Pt vo nghiem");
-//            Console.WriteLine("pt co nghiem la {0}", (float)(-b / a));
-//        }
-
-//        //pt bac 2 ax^2+bx+c=0
-//        public static void ptb2(int a, int b, int c)
-//        {
-//            if (a == 0)
-//            {
-//                if (b == 0)
-//                {
-//                    Console.WriteLine("pt vo nghiem ");
-//                }
-//                else
-//                {
-//                    Console.WriteLine("pt co 1 nghiem", (float)-c / b);
-//                }
-//                return;
-//            }
-
-//            float denta = (b * b) - (4 * a * c);
-//            if (denta > 0)
-//            {
-//                float x1 = (float)(-b + Math.Sqrt(denta)) / (2 * a);
-//                float x2 = (float)(-b - Math.Sqrt(denta)) / (2 * a);
-
-//                Console.WriteLine("pt co 2 nghiem la x1={0} x2={1}", x1, x2);
-//            }
-//            else if (denta == 0)
-//            {
-//                Console.WriteLine("pt co nghiem kep", -b / (2 * a));
-//            }
-//            else
-//            {
-//                Console.WriteLine("pt vo nghiem");
-//            }
-//        }
-
-//        //chuyen do C sang K va F
-//        public static void chuyenDoiDoCSangKVaF(float doC)
-//        {
-//            float doF = (float)((doC * 1.8) + 32);
-//            float doK = (float)(doC + 273.15);
-//            Console.WriteLine("Do C Sang F la {0}", doF);
-//            Console.WriteLine("Do C Sang K la {0} ", doK);
-//        }
+             void TaoSanLuong()
+            {
+                Console.Write("Nhap Id nhan vien  ");
+                string id = Console.ReadLine();
+                var nv = danhSachNV.FirstOrDefault(n => n.Id == id);
+                if (nv != null)
+                {
+                    nv.ThemCongDoan();
+                }
+                else
+                {
+                    Console.WriteLine("Id not found");
+                }
+            }
+        }
 
 
-//        public static void checkThang(int month)
-//        {
-//            switch (month)
-//            {
-//                case 1:
-//                case 3:
-//                case 5:
-//                case 7:
-//                case 8:
-//                case 10:
-//                case 12:
-//                    Console.WriteLine("Thang co 31 ngay");
-//                    break;
-//                case 2:
-//                    Console.WriteLine("thang co 28 ngay");
-//                    break;
-//                case 4:
-//                case 6:
-//                case 9:
-//                case 11:
-//                    Console.WriteLine("thang co 30 ngay");
-//                    break;
 
-//                default:
-//                    Console.WriteLine("abc");
-//                    break;
-//            }
-//        }
+        static void XuatExcel(List<NhanVien> danhSachNV)
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            var sortedList = danhSachNV.OrderBy(n => n.Ten).ToList();
 
-//    }
-//}
+            using (var package = new ExcelPackage())
+            {
+                var ws = package.Workbook.Worksheets.Add("BaoCaoChiTiet");
+
+
+                string[] headers = { "Name", "Process", "Process_Name", "Qty", "Price", "Total" };
+                for (int i = 0; i < headers.Length; i++)
+                {
+                    ws.Cells[1, i + 1].Value = headers[i];
+                    ws.Cells[1, i + 1].Style.Font.Bold = true;
+                    ws.Cells[1, i + 1].Style.Fill.PatternType = ExcelFillStyle.Solid;
+                    ws.Cells[1, i + 1].Style.Fill.BackgroundColor.SetColor(Color.Gold);
+                }
+
+                int row = 2;
+                int tongTatCa = 0;
+                int tongQty = 0;
+
+                foreach (var nv in sortedList)
+                {
+                    int tongNhanVien = 0;
+                    int tongQtyNV = 0;
+
+                    foreach (var cd in nv.CongDoans)
+                    {
+                        ws.Cells[row, 1].Value = nv.Ten;
+                        ws.Cells[row, 2].Value = cd.MaCongDoan;
+                        ws.Cells[row, 3].Value = cd.TenCongDoan;
+                        ws.Cells[row, 4].Value = cd.SoLuongSanPham;
+                        ws.Cells[row, 5].Value = cd.DonGia;
+                        ws.Cells[row, 6].Value = cd.ThanhTien;
+
+                        tongNhanVien += cd.ThanhTien;
+                        tongQtyNV += cd.SoLuongSanPham;
+
+                        row++;
+                    }
+
+
+                    ws.Cells[row, 1].Value = nv.Ten;
+                    ws.Cells[row, 2].Value = "Tong";
+                    ws.Cells[row, 4].Value = tongQtyNV;
+                    ws.Cells[row, 6].Value = tongNhanVien;
+
+                    using (var range = ws.Cells[row, 1, row, 6])
+                    {
+                        range.Style.Font.Bold = true;
+                        range.Style.Fill.PatternType = ExcelFillStyle.Solid;
+                        range.Style.Fill.BackgroundColor.SetColor(Color.Gold);
+                    }
+
+                    tongTatCa += tongNhanVien;
+                    tongQty += tongQtyNV;
+                    row++;
+                }
+
+
+                ws.InsertRow(2, 1);
+                ws.Cells[2, 2].Value = "Tong";
+                ws.Cells[2, 4].Value = tongQty;
+                ws.Cells[2, 6].Value = tongTatCa;
+
+                using (var range = ws.Cells[2, 1, 2, 6])
+                {
+                    range.Style.Font.Bold = true;
+                    range.Style.Fill.PatternType = ExcelFillStyle.Solid;
+                    range.Style.Fill.BackgroundColor.SetColor(Color.Gold);
+                }
+
+                ws.Cells[ws.Dimension.Address].AutoFitColumns();
+                package.SaveAs(new FileInfo("BaoCaoChiTiet.xlsx"));
+                Console.WriteLine(" Xuat thanh cong BaoCaoChiTiet.xlsx ");
+            }
+        }
+
+    }
+}
